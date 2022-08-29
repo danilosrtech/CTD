@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+header {
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+
+header h1{
+    background-color: #00669F;
+    padding: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+}
+
+header p {
+    background-color: #1CD1B0;
+    padding: 5px 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+    min-height: 100vh;
+    padding: 80px 40px;
+}
+
+/* Estilização dos cards */
+.hero-card {
+    height: fit-content;
+    width: 400px;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hero-card .favorite-icon {
+    width: 30px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+/* Estilização específica para uma classe dentro de outra  */
+.hero-card .background-image {
+    width: 100%;
+}
+
+/*Tags img por padrão são inline*/
+.hero-card .profile-image {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: -75px auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card-text {
+    text-align: center;
+    padding: 40px;
+    margin: 50px 0 0 0;
+}
+.card-text h2 {
+    margin: 20px;
+    font-size: 30px;
+}
+
+.hero-card .card-text button {
+    background-color: #00669F;
+    border-style: none;
+    margin: 15px;
+    padding: 20px 30px;
+    color: white;
+}
+
+footer {
+    background-color: #00669F;
+    padding: 10px;
+    color: white;
+}
