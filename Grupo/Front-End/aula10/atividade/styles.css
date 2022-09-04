@@ -38,24 +38,28 @@ header p {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 70px;
-    min-height: 100vh;
-    padding: 80px 40px;
+    gap: 36px 24px;
+    padding: 40px 20px;
 }
 
 /* Estilização dos cards */
 .hero-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     height: fit-content;
-    width: 400px;
+    width: 300px;
     background-color: #F3F3F3;
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
     position: relative;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+/* Estilização do ícone de curtida com position absolute referente ao elemento hero-card */
 .hero-card .favorite-icon {
-    width: 30px;
+    width: 40px;
     position: absolute;
     top: 15px;
     left: 15px;
@@ -69,29 +73,28 @@ header p {
 /*Tags img por padrão são inline*/
 .hero-card .profile-image {
     display: block;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     border-radius: 50%;
-    margin: -75px auto;
+    margin-top: -60px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .card-text {
     text-align: center;
-    padding: 40px;
-    margin: 50px 0 0 0;
+    padding: 10px 30px;
 }
 .card-text h2 {
-    margin: 20px;
+    margin: 10px 0;
     font-size: 30px;
 }
 
 .hero-card .card-text button {
     background-color: #00669F;
     border-style: none;
-    margin: 15px;
-    padding: 20px 30px;
+    margin: 10px;
+    padding: 10px 20px;
     color: white;
 }
 
