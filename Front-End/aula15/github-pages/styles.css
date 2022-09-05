@@ -12,13 +12,14 @@ body {
     font-size: 15px;
 }
 
-header {
+.main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: black;
     color: white;
-    padding: 20px 40px;
+    padding: 15px 30px;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
 }
 
 .nav-menu {
@@ -28,13 +29,10 @@ header {
 
 .logo {
     display: flex;
+    align-items: center;
     color: white;
-}
-
-.logo img{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+    text-decoration: none;
+    gap: 10px;
 }
 
 .main-menu {
@@ -49,10 +47,77 @@ header {
 }
 
 .main-content {
-    height: 560px;
-    background-image: url('./assets/danilo-background.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+}
+
+.start img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.call {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.lista-materias {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+}
+
+.lista-materias a {
+    text-decoration: none;
+    background-color: #00631a;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    height: 60px;
+    padding: 10px 40px;
+}
+
+@media (max-width: 500px) {
+    .main-header {
+        flex-direction: column;
+        height: fit-content;
+        gap: 12px;
+    }
+
+    .lista-materias {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 320px) {
+    .main-menu {
+        flex-direction: column;
+    }
+
+    .start img{
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+    }
 }
