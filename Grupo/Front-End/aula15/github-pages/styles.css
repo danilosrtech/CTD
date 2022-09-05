@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    color: white;
+}
+
+.logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.main-menu {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+}
+
+.main-menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.main-content {
+    height: 560px;
+    background-image: url('./assets/danilo-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+}
