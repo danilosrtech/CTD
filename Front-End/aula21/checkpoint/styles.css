@@ -16,7 +16,7 @@
     }
 
     100% {
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 10px 10px rgba(126, 217, 87, 0.55);
     }
 }
 
@@ -34,14 +34,26 @@ body {
     animation-fill-mode: forwards;
 }
 
-.btn-custom {
-    background-color: #7ED957;
-    color: white;
-    border: none;
+.nav-link {
+    color: #ffffff8c;
+}
+
+.nav-link:visited {
+    color: gray;
 }
 
 .nav-link:hover {
-    color: #7ED957;
+    color: #fff;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: #fff;
+}
+
+.btn-custom {
+    background-color: rgb(126, 217, 87);
+    color: white;
+    border: none;
 }
 
 .bg-home {
